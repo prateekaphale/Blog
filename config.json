@@ -1,0 +1,32 @@
+{
+
+  "prams": {
+    "local_server": true,
+    "mysql": {
+      "host": "localhost",
+      "prod_host": "prod_host.url",
+      "prod_user": "prod_user",
+      "user": "root",
+      "prod_password": "Prateek@123",
+      "database": "blog_website"
+
+    },
+    "user": "prateekaphale@gmail.com",
+    "pass" : "Prateek@123",
+    "Title": "Supernatural - A Day in Supernatural",
+    "home_name": "SUPERNATURAL",
+    "admin" : "Prateek",
+    "Heading": "Life Of Winchesters",
+    "fb_url": "https://facebook.com/prateekaphale",
+    "gh_url": "https://github.com/prateekaphale",
+    "tw_url": "https://x.com//prateekaphale",
+    "Email_Information": {
+      "mail_server": "smtp.gmail.com",
+      "mail_port": "465",
+      "mail_username": "prateekaphale@gmail.com"
+    },
+    "Session": {
+      "secret_key" : "Cr7m10p7!!"
+    }
+  }
+}

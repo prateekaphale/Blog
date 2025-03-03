@@ -1,0 +1,47 @@
+{% extends "layout.html" %}
+
+{% block body %}
+    <!-- Page Header -->
+    <header class="masthead" style="background-image: url({{ url_for('static', filename='assets/img/home-bg.jpg') }})">
+        <div class="container position-relative px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <div class="post-heading">
+                        <!-- Display the post title -->
+                        <h1>{{ post['title'] if post else 'Post not available' }}</h1>
+                        <!-- Optional subheading - a snippet of the content -->
+                                                <!-- Author and timestamp meta information -->
+                        <span class="meta">
+                            Posted by <a href="#!">{{ post['author'] if post else 'Unknown'}}</a>
+                            on {{ post['created_at'].strftime('%B %d, %Y') if post and post['created_at'] else 'Unknown date' }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Post Content -->
+    <article class="mb-4">
+        <div class="container px-4 px-lg-5">
+            <div class="row gx-4 gx-lg-5 justify-content-center">
+                <div class="col-md-10 col-lg-8 col-xl-7">
+                    <!-- Display full content of the post -->
+                    
+                    
+
+                    <!-- Main content of the post -->
+                    <div class="post-content">
+                        <p>{{ post['content'] if post else 'No content available' }}</p>
+                    </div>
+
+                    <!-- If the post isn't available, show a message -->
+                    {% if not post %}
+                        <p class="text-danger">Sorry, the post you're looking for does not exist.</p>
+                    {% endif %}
+<p class="post-meta">Posted by {{ post['author'] if post else 'Unknown' }} on {{ post['created_at'].strftime('%B %d, %Y') if post and post['created_at'] else 'Unknown date' }}</p>
+                </div>
+            </div>
+        </div>
+    </article>
+{% endblock %}
