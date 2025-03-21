@@ -7,12 +7,12 @@
       "prod_host": "prod_host.url",
       "prod_user": "prod_user",
       "user": "root",
-      "prod_password": "Prateek@123",
+      "prod_password": "",
       "database": "blog_website"
 
     },
-    "user": "prateekaphale@gmail.com",
-    "pass" : "Prateek@123",
+    "user": "",
+    "pass" : "",
     "Title": "Supernatural - A Day in Supernatural",
     "home_name": "SUPERNATURAL",
     "admin" : "Prateek",
@@ -23,10 +23,10 @@
     "Email_Information": {
       "mail_server": "smtp.gmail.com",
       "mail_port": "465",
-      "mail_username": "prateekaphale@gmail.com"
+      "mail_username": ""
     },
     "Session": {
-      "secret_key" : "Cr7m10p7!!"
+      "secret_key" : ""
     }
   }
 }
